@@ -4,7 +4,9 @@ on:
   workflow_call:
     inputs:
       publish-results:
-        description: Whether to publish results
+        description: |-
+          Whether to publish results.
+          Note that the `id-token: write` permission is required irrespective of this input (but only used if true).
         type: boolean
 
 permissions: {}
